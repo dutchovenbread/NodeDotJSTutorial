@@ -9,11 +9,8 @@ function readFile(){
     var filteredResult = []
     for(i=0; i< list.length; i++){
       if (p.extname(list[i]) == ending){
-        filteredResult[filteredResult.length]=list[i]
+        console.log(list[i])
       }
-    }
-    for(i=0; i< filteredResult.length; i++){
-      console.log(filteredResult[i])
     }
   })
 }
