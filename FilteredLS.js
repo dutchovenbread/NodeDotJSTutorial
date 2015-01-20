@@ -4,7 +4,7 @@ var path = process.argv[2]
 var filter = process.argv[3]
 var ending = '.' + filter
 
-function readFile(){
+function filterLS(){
   fs.readdir(path, function doneReading(err, list){
     var filteredResult = []
     for(i=0; i< list.length; i++){
@@ -15,4 +15,4 @@ function readFile(){
   })
 }
 
-readFile()
+filterLS()
